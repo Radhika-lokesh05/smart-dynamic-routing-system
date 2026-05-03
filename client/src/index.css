@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Outfit', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0a0e17] text-slate-100 min-h-screen;
+  background: radial-gradient(circle at top right, #1e293b, #0a0e17);
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl transition-all duration-300;
+}
+
+.glass-card:hover {
+  @apply border-white/20 -translate-y-1;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent;
+}
+
+/* Custom Sliders */
+input[type="range"] {
+  @apply h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-700;
+}
+
+/* Map Tooltips */
+.route-tooltip {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+.route-tooltip::before {
+  display: none !important;
+}

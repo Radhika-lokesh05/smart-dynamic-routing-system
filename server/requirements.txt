@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+motor
+redis
+pydantic
+python-dotenv
+httpx
+geopy
+websockets
+python-jose[cryptography]
+passlib[bcrypt]
+dnspython
