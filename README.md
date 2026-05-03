@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Smart Dynamic Routing System
 
 An AI-powered traffic and routing management system featuring predictive pathfinding, multi-objective optimization, and real-time emergency protocols.
@@ -46,4 +46,3 @@ npm run dev
 =======
 # smart-dynamic-routing-system
 An AI-driven routing engine that optimizes urban traffic flow based on real-time data, fuel efficiency metrics, and emergency priorities. It provides predictive pathfinding with integrated fuel consumption calculations to minimize travel time, costs, and carbon footprints.
->>>>>>> b4c436151b4f933863dbdb580700e85375f9dbdc
